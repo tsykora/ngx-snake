@@ -99,6 +99,7 @@ export class AppComponent {
     let oldTail = this.snake.parts.pop();
     this.board[oldTail.y][oldTail.x] = false;
 
+    // inserts new elements at the start of an array
     this.snake.parts.unshift(newHead);
     this.board[newHead.y][newHead.x] = true;
 
